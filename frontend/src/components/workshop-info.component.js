@@ -53,7 +53,7 @@ function WorkshopInfo({backLink}) {
            firstname, lastname, email, age, message
        }
        SignupService.Signup(data).then((data) => {
-           alert("Deine Anmeldung wurde erfolgreich abgeschickt. Du erhälst in Kürze Rückmeldung von uns!");
+           alert("Deine Anmeldung wurde erfolgreich abgeschickt. Du erhälst in spätestens 24h eine Rückmeldung von uns!");
        }).catch((error) => {
            alert("Fehler: " + error.message);
        })
@@ -66,60 +66,32 @@ function WorkshopInfo({backLink}) {
                 <div>
                     <TypeAnimationComponent />
 
+                    <h2><span className="underline">Du</span> kannst etwas bewegen. Sei es auf der Straße, in der Politik oder an deinem Schreibtisch.</h2>
+        
                     <a onClick={() => { 
                         setY({ y: scrollDestinationRef.current.getBoundingClientRect().top - 20, from: { y: document.querySelector(".page").scrollTop }, });
-                        }} className="button signup-button">Anmelden</a>
+                        }} className="button signup-button">Beim Projekt anmelden</a>
+                    <p>Für jede Anmeldung wird <span className="underline">ein Baum gepflanzt</span>.</p>
 
-                    <h2>»_forfuture» sind strategische <span className="underline">Workshops</span> zum Experimentieren, Lernen & Begreifen, wie wir schon heute <span className="underline">unsere Zukunft gestalten</span> können!</h2>
-
-                    <h3>Über mich</h3>
-                    <p>Ich bin Katrin Schulz, Designstudentin im neunten Semester an der HAW Hamburg (Hochschule für Angewandte Wissenschaften), 24 Jahre alt und liebe Sport, Musik und Kochen. Ich gehe gerne raus und mache mir viele Gedanken, wie die Welt wohl so in 20, 30 Jahren aussehen wird…</p>
-                    <img alt="profile picture" src={Profile}/>
-
-                    <h3>Das Projekt</h3>
+                    <h2>Wir suchen <span className="underline">dich*</span> für einen kreativen workshop.</h2>
+                    <p>*im Alter zwischen 16 und 19 Jahren
+                    <p>Entdecke deine Stärken.Lerne professionelle Methoden, um nachhaltige Lösungen zu finden. Arbeite in einem engagierten und kreativen Team. Hilf mit, an einer idealen Zukunft zu arbeiten </p>
                     <p>
-                    Das Projekt »_forfuture» ist der praktische Teil meiner Bachelorarbeit, in der ich mich mit Social Design beschäftige. <br />
-                    <br />
-                    Social Design klingt erstmal hochgestochen, ist im Grunde aber »Designen <span className="underline">mit</span> und <span className="underline">für</span> Gesellschaft». <br />
-                    In vielen Social Design Projekten geht es darum, nicht unbedingt kommerziell zu sein (also etwas verkaufen zu wollen), sondern <span className="underline">kreative Lösungen</span> für <span className="underline">verzwickte Probleme</span> zu finden. <br />
-                    <br />
-                    Der <span className="underline">Prozess</span> ist das, worum es geht, und somit der Schwerpunkt unserer Arbeit. Aber natürlich soll das Produkt am Ende nicht zu kurz kommen. Deswegen gibt es gewisse Methoden und kreative Aufgaben, um am Ende des Social Design Prozesses mindestens einen Prototyp in der Hand zu halten. Dieser kann dann für zukünftige Workshops (mit der gleichen oder ähnlichen Frage) als Grundlage dienen.<br />
-                    <br />
-                    Wie dieser <span className="underline">Prototyp</span> am Ende aussieht – ob es eine Werbe-Kampagne oder eine App oder etwas komplett anderes wird – ist zu diesem Zeitpunkt noch unklar, denn wir wissen ja noch nicht wo genau unser Problem steckt. Aufregend, oder? :)<br />
-                    <br />
-                    Die Frage, meiner »_forfuture» Workshop-Reihe lautet: »<span className="underline">Wie kann ich Nachhaltigkeit mehr in meinen Alltag einbauen?</span>» Am besten mit so wenig Aufwand wie möglich, denn – seien wir ehrlich – es täglich viele Dinge, die Zeit und Energie kosten und auf die man auch achten will. <br />
-                    <br />
-                    Also vielleicht geht es dir ähnlich wie mir und es fällt dir gar nicht so leicht 100% umweltfreundlich zu leben, obwohl es eigentlich so wichtig wäre. <br />
-                    <span className="underline">Wie können wir da besser werden und vielleicht eine Antwort finden</span>? Möglicherweise eine Antwort, die am Ende nich tnur uns, sondern mehr Menschen hilft, denen es ähnlich geht. <br />    
-                    </p>
+                    Kostenlos anmelden und an einem 2-tägigen Intensiv-Workshop zum Thema »Nachhaltigkeit» teilnehmen.<br />
+                    </p>          
+                        
+                    <h2>Warum kostenlos Teilnehmen?</h2>
+                    <p>Dieser Workshop ist praktischer Teil einer Bachelorarbeit im Bereich Design. Deswegen fallen weder Kosten noch Werbung an, sondern wird allein durch deine Teilnahme vergütet.  </p>
 
-                    <h3>Unsere Zusammenarbeit</h3>
-                    <p>
-                        Das Team zu einer Zukunfts-Verändernden Frage wie dieser (siehe oben), muss agil sein, unkonventionell (also »andersdenkend»), engagiert und nicht erwachsen! Unsere Gruppe wird nicht größer sein als <span className="underline">acht Personen</span> (mich eingeschlossen). Hinterher machen die vielseitigen Blickwinkel ein solches Projekt stark. Das heißt Nachhaltigkeits-Profis sowie »Just-Starter» sind herzlich willkommen! <br />
-                        <br />
-                        In unserer Zusammenarbeit wird es viel um kreative Methoden gehen, die ich aus dem Designbereich kenne. Unter anderem dem Design-Thinking Prozess. Es geht schließlich darum unsere Zukunft zu »gestalten». Das baut darauf auf, dass wir <span className="underline">gemeinsam</span> entscheiden, wohin sich unser Prozess entwickelt. Ganz demokratisch.<br />
-                        <br />
-                        Wie gesagt: Die Workshop-Reihe ist der praktische Teil meiner Bachelorarbeit. Ich habe also Grund genug seriös mit dir und dem hier geschriebenen Inhalt umzugehen. Ich nehme meine Sache ernst und würde mich riesig freuen, wenn du Lust darauf hast, dabei zu sein!<br />
-                        <br />
-                    </p>
-
-                    <h3>Durchführung während Corona</h3>
-                    <p>
-                        Das ideale Umfeld solcher Art Workshop ist normalerweise ein großer Tisch und vielen Materialen, wie Zettel, Stift, Klebe, vielleicht Holz, Knete, etc. In Zeiten von Korona müssen wir ein wenig umdisponieren und werden uns größtenteils auf digitalem Wege treffen – über das Internet. Dafür ist es wichtig, dass du einen Computer oder Laptop mit Internetzugang hast. Auch ein Mikro und eine Kamera wären gut, damit wir uns hören und sehen können. Zumindest Laptops haben Mikros und Kameras eingebaut. 
-                    </p>
-
-                    <h3>Workshop-Termine</h3>
-                    <p>
-                        Mo, 08.06. bis Fr, 12.06.2020 (inklusive),<br />
-                        immer 14 bis 18 Uhr <br />
-                        Workshops: »Verstehen & Beobachten», »Standpunkt finden», »Ideen entwickeln», »Prototyp kreieren», »Testen» und »Feedback»<br />
-                    </p>
-
+                    
                     <h3 ref={scrollDestinationRef}>Anmelden</h3>
+                    <h2>Es sind nur <span className="underline">7 Plätze</span> verfügbar!</h2>
                     <p>
-                        Du möchtest bei dem Projekt dabei sein? Dann trag dich gern ein!
-                        Bei Fragen, schreib mir einfach ‘ne Mail an: info@forfuture.studio
+                    Melde dich bis zum 8.6.2020 an und bekommst 24h später Bescheid, ob du beim Workshop dabei bist. <br />
+                    <br />
+                    Bei Fragen vorab, schreib uns einfach eine Mail an: info@forfuture.studio <br />
                     </p>
+
                     <input type="text" value={firstname} onChange={onChangeFirstname} placeholder="Vorname"></input>
                     <input type="text" value={lastname} onChange={onChangeLastname} placeholder="Nachname"></input>
                     <input type="email" value={email} onChange={onChangeEmail} placeholder="E-Mail Adresse"></input>
@@ -127,13 +99,67 @@ function WorkshopInfo({backLink}) {
                         <span>Alter:</span>
                         <SelectorComponent value={items.indexOf(age)} onChange={onChangeAge} items={items}></SelectorComponent>
                     </div>
-                    <textarea value={message} onChange={onChangeMessage} placeholder="Nachricht (max 100 Zeichen)" maxLength="100" rows="4"></textarea>
+                    <textarea value={message} onChange={onChangeMessage} placeholder="Schreib eine Nachricht (max 100 Zeichen)" maxLength="100" rows="4"></textarea>
                     <button onClick={SignupClicked} style={{marginTop: "1.4em"}}>Anmeldung abschicken</button>
-                    <p>Bis spätestens <span className="underline">03.06.2020</span> bekommst du Bescheid, ob du bei dem Projekt dabei bist. Ich freu mich auf dich!</p>
+                    
+                    <h3>Workshop Termine</h3>
+                    <h2>13.06.2020 (Samstag) ab 10 Uhr - open end</h2>
+                    <p>
+                    Kennenlernen, Problem besprechen, Recherchieren, Personas erstellen, Standpunkt definieren<br />
+                    </p>    
+                    <h2>14.06.2020 (Samstag) ab 10 - 18 Uhr</h2>   
+                    <p>
+                   Ideen entwickeln, Prototypen bauen, Testen und Feedback einholen, Abschluss-Reflektion<br />
+                    </p>
+        
+                    <h2>Mehr Informationen:</h2>
 
-                    <h3>Du bist jünger als 18?</h3>
-                    <p>Sprich mit deinen Eltern! Zeig ihnen diese Seite und hole dir ihr »okay», an diesem Projekt teilzunehmen. Nach der Anmeldung bekommst du in der Bestätigungsmail ein Einverständnis-Formular zugeschickt, das deine Eltern ausfüllen und zurückschicken müssen. Andernfalls darf ich leider (rechtlich) nicht mit dir arbeiten und das wäre schade! </p>
+                    <h3>Über den Workshop</h3>
+                    <p>
+                    Wir spüren immer stärker die Folgen der Klimaerwärmung auch in Deutschland. Wir beschäftigen uns mit dem Thema in Schule oder im Studium. Wir protestieren, stellen unsere Ernährung um, kaufen unsere Kleidung größtenteils Secondhand. Aber komplett nachhaltig zu leben ist nicht so einfach und alles andere als »gewöhnlich».  <br />
+                    <br />
+                    Wie können wir Nachhaltigkeit mehr in meinen Alltag integrieren? Sodass es nicht mehr etwas ist, dass schwierig und aufwändig ist, sondern einfach normal wird? <br />
+                    <br />
+                    Das ist die Frage, die während unseres 2-tägigen Workshops im Mittelpunkt steht. Mit Hilfe von Design Thinking Methoden werden wir einen Ideen-Sprint durchlaufen, wie es auch große Unternehmen wie Google oder Apple tun, um Ideen und Erkenntnisse zu entwickeln und zu testen. Ziel der Veranstaltung ist, ein Prototyp zu bauen, der dabei helfen kann, leichter nachhaltig zu Leben.<br />
+                    <br />
+                    Für den Design Thinking Prozess ist es keine Voraussetzung “gut Zeichnen” zu können oder “irgendwie kreativ” zu sein. Du bist wichtig. Du mit deinen Stärken, Ansichten und Erfahrungen. So machst du das Team stark. <br />
+                    <br />
+                    Während des Prozesses werden wir neue digitale Tools kennen lernen, uns in Design Thinking üben und natürlich auch etwas über uns selbst und das Thema »Nachhaltigkeit» lernen. Unserer Grundüberzeugung nach, hat jeder eine Stimme und Entscheidungskraft, die wir einsetzten, um gemeinsam ein tolles Produkt zu entwickeln. Gute Teamarbeit baut auf Toleranz und darauf sich gegenseitig zu bestärken auf! <br />
+                    </p>
+
+                    <h3>Als Team arbeiten</h3>
+                    <p>
+                        Du musst nicht toll Malen können oder generell künstlerisch begabt sein. Ein ideales Design Thinking Team besteht aus Menschen, mit ganz unterschiedlichen Erfahrungen und Ansichten, Schwerpunkten und Stärken. Das gilt auch für unser Thema: Nachhaltigkeits-Profis, sowie »Just-Starter» sind herzlich willkommen!  <br />
+                        <br />
+                        In unserem Sprint bilden wir ein Team aus maximal acht Leuten (Mentor miteingeschlossen, deswegen nur 7 Plätze, auf die man sich bewerben kann). Wichtigste Voraussetzung ist, dass du zwischen 16 und 19 Jahren alt bist und Lust hast etwas Neues auszuprobieren. <br />
+                        <br />
+                        Wie gesagt: Die Workshop-Reihe ist der praktische Teil meiner Bachelorarbeit. Ich habe also Grund genug seriös mit dir und dem hier geschriebenen Inhalt umzugehen. Ich nehme meine Sache ernst und würde mich riesig freuen, wenn du Lust darauf hast, dabei zu sein!<br />
+                        <br />
+                    </p>
+
+                    <h3>Korona-Konform</h3>
+                    <p>
+                    Das Zentrum eines Design Thinking Workshops ist normalerweise ein großer Tisch und vielen Materialen, wie Zettel, Stift, Klebe, vielleicht Holz, Knete, etc. In Zeiten von Korona müssen wir ein wenig umdisponieren und werden uns größtenteils auf digitalem Wege treffen – über das Internet. Dafür ist es wichtig, dass du einen Computer oder Laptop mit Internetzugang hast. Auch ein Mikro und eine Kamera wären gut, damit wir uns hören und sehen können. Zumindest Laptops haben Mikros und Kameras eingebaut. 
+                    </p>
+
+                    <h3>Minderjährig?</h3>
+                    <p>Wenn du noch nicht 18 Jahre alt bist musst du, spätestens nach der Anmeldung, deine Eltern eine Einverständnis-Formular unterschreiben lassen, dass du mit der Bestätigungsmail zugeschickt bekommst und das wieder zurückgeschickt werden muss. Andernfalls darfst du leider (rechtlich) nicht am Workshop teilnehmen. </p>
                 
+                    <h3>Über uns</h3>
+                    <p>Mein Name ist Katrin Schulz, Bachelorstudentin an der Hochschule für Angewandte Wissenschaften Hamburg, im Bereich Kommunikationsdesign</p>
+                    <img alt="profile picture" src={Profile}/> <br/>
+                    <p> 
+                    Mithilfe von toller Unterstützung (wie zum Beispiel das Programmieren dieser Webseite), habe ich diesen Intensiv-Workshop aufgebaut, der praktischer Teil meiner Bachelorarbeit (also der Abschlussarbeit meines Studiums) ist. <br />
+                    <br />
+                    Das Projekt baut auf der Theorie und den Methoden von Social Design auf, einer relativ neueren Disziplin innerhalb des Designs. Social Design klingt erstmal hochgestochen, ist im Grunde aber »Designen mit und für Gesellschaft». In vielen Social Design Projekten geht es darum, kreative Lösungen für verzwickte Gesellschaftliche Probleme zu finden. Dies findet meist in einem interdisziplinären Kreis von Leuten statt, die mit ihren unterschiedlichen Schwerpunkten an den Problemen arbeiten und Lösungen finden.
+                    </p>
+                    
+                    <img alt="HAW Hamburg Logo" src={HAW} />
+
+                    <p>
+                        Eine Bachelorarbeit der Hochschule für Angewandte Wissenschaften Hamburg, im Bereich Kommunikationsdesign, <span className="underline">Referenz-Kontakt</span>: Hendrike Schmietendorf, Öffentlichkeitsarbeit Fakultät DMI, Mail: Hendrike.Schmietendorf@haw-hamburg.de
+                    </p>
+                    
                     <h3 id="policy">Datenschutz</h3>
                     <p>Mit deinen Daten soll gut umgegangen werden! Aus dem Grund sind auf dieser Seite keine Analytics- oder Trackingfunktionen eingebaut und lediglich <span className="underline">seriöse</span> Drittanbieter eingebunden, die den <span className="underline">Richtlinien der DSGVO</span> folgen. Das heißt, sie haben ihre Server in Deutschland, sodass keine Datenweitergabe stattfindet! Möchtest du mehr erfahren? Dann lies in den Bestimmungen die Details nach:</p>
                     <Link className="button" to={{
@@ -150,12 +176,6 @@ function WorkshopInfo({backLink}) {
                             backLink: backLink
                         }
                     }}>Impressum</Link>
-
-                    <img alt="HAW Hamburg Logo" src={HAW} />
-
-                    <p>
-                        Eine Bachelorarbeit der Hochschule für Angewandte Wissenschaften Hamburg, im Bereich Kommunikationsdesign, <span className="underline">Kontakt</span>: Hendrike Schmietendorf, Öffentlichkeitsarbeit Fakultät DMI, Mail: Hendrike.Schmietendorf@haw-hamburg.de
-                    </p>
 
                     <p><br/>© Katrin Schulz, 2020</p>
 
